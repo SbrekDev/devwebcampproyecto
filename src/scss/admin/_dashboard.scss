@@ -9,7 +9,10 @@
     background-color: v.$gris-claro;
     &__header{
         background-color: v.$gris-oscuro;
-        padding: 2rem;
+        padding-bottom: 1rem;
+        @include m.tablet{
+            padding: 2rem;
+        }
     }
     &__header-grid{
         display: flex;
@@ -22,6 +25,9 @@
     }
     &__logo{
         @include m.logo;
+        @include m.telefono{
+            margin: 1.5rem 0;
+        }
         @include m.texto-fluido(2rem,3rem);
     }
 

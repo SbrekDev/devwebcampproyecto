@@ -3,6 +3,9 @@
 
 .table{
     width: 100%;
+    @include m.telefono{
+        max-width: 35rem;
+    }
     border-collapse: collapse;
 
     &__thead{
@@ -36,6 +39,9 @@
             @include m.tablet{
                 flex-direction: row;
             }
+            @include m.telefono{
+                padding: 1.5rem 1rem;
+            }
         
             
         }
@@ -46,6 +52,12 @@
             display: none;
         }
     }
+    &--maxwidth{
+        @include m.telefono{
+            max-width: 12rem;
+        } 
+    }
+
 
 
     &__accion{

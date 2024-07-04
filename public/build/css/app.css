@@ -359,6 +359,11 @@ h3 {
   margin: 6rem 0 3rem 0;
   text-align: center;
 }
+@media (max-width: 480px) {
+  [class$=__heading] {
+    margin: 2.5rem 0 3rem 0;
+  }
+}
 
 [class$=__descripcion] {
   margin-bottom: 5rem;
@@ -946,6 +951,9 @@ h3 {
 }
 .formulario__input--file, .formulario__select--file {
   border: none;
+  max-width: 25rem;
+  text-wrap: wrap;
+  padding: 0;
 }
 .formulario__input--sociales, .formulario__select--sociales {
   flex: 1;
@@ -1339,7 +1347,12 @@ h3 {
 }
 .dashboard__header {
   background-color: #1E293B;
-  padding: 2rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .dashboard__header {
+    padding: 2rem;
+  }
 }
 .dashboard__header-grid {
   display: flex;
@@ -1363,6 +1376,11 @@ h3 {
   .dashboard__logo {
     text-align: left;
     margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .dashboard__logo {
+    margin: 1.5rem 0;
   }
 }
 .dashboard__form {
@@ -1513,6 +1531,11 @@ h3 {
   width: 100%;
   border-collapse: collapse;
 }
+@media (max-width: 480px) {
+  .table {
+    max-width: 35rem;
+  }
+}
 .table__thead {
   background-color: #1E293B;
   color: #FFFFFF;
@@ -1540,8 +1563,18 @@ h3 {
   }
 }
 @media (max-width: 480px) {
+  .table__td--acciones {
+    padding: 1.5rem 1rem;
+  }
+}
+@media (max-width: 480px) {
   .table--xs {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .table--maxwidth {
+    max-width: 12rem;
   }
 }
 .table__accion {

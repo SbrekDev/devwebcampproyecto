@@ -72,6 +72,9 @@
 @mixin nombre-pagina {
     @include headings;
     margin: 6rem 0 3rem 0;
+    @include telefono{
+        margin: 2.5rem 0 3rem 0;
+    }
     text-align: center;
 }
 

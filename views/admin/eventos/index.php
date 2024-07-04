@@ -13,10 +13,10 @@
         <table class="table">
             <thead class="table__thead">
                 <tr>
-                    <th scope="col" class="table__th">Evento</th>
-                    <th scope="col" class="table__th">Categoría</th>
+                    <th scope="col" class="table__th table--maxwidth">Evento</th>
+                    <th scope="col" class="table__th table--xs">Categoría</th>
                     <th scope="col" class="table__th table--xs">Día y Hora</th>
-                    <th scope="col" class="table__th table--xs">Ponente</th>
+                    <th scope="col" class="table__th table--maxwidth">Ponente</th>
                     <th scope="col" class="table__th"></th>
                 </tr>
             </thead>
@@ -24,16 +24,16 @@
             <tbody class="table__tbody">
                 <?php foreach($eventos as $evento) { ?>
                     <tr class="table__tr">
-                        <td class="table__td">
+                        <td class="table__td table--maxwidth">
                          <?php echo $evento->nombre; ?>
                         </td>
-                        <td class="table__td">
+                        <td class="table__td table--xs">
                          <?php echo $evento->categoria->nombre; ?>
                         </td>
                         <td class="table__td table--xs">
                          <?php echo $evento->dia->nombre . ' ' . $evento->hora->hora; ?>
                         </td>
-                        <td class="table__td table--xs">
+                        <td class="table__td table--maxwidth">
                          <?php echo $evento->ponente->nombre . ' ' . $evento->ponente->apellido;  ?>
                         </td>
                         <td class="table__td--acciones">

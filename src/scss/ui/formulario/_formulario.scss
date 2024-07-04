@@ -49,6 +49,8 @@
         font-size: 1.8rem;
         color: rgba($color: v.$negro, $alpha: .8);
     }
+
+
     &__input,
     &__select{
         padding: 1rem;
@@ -57,6 +59,10 @@
 
         &--file{
             border: none;
+            max-width: 25rem;
+            text-wrap: wrap;
+            padding: 0
+            
         }
         &--sociales{
             @extend .formulario__input;
