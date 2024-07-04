@@ -32,7 +32,7 @@
     }
 
     &__imagen{
-        min-width: 350px;
+        min-width: 300px;
         @include m.tablet{
             min-width: unset;
         }

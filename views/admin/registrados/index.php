@@ -6,7 +6,7 @@
         <table class="table">
             <thead class="table__thead">
                 <tr>
-                    <th scope="col" class="table__th">Nombre</th>
+                    <th scope="col" class="table__th table--xs">Nombre</th>
                     <th scope="col" class="table__th">Email</th>
                     <th scope="col" class="table__th">Plan</th>
                 </tr>
@@ -15,7 +15,7 @@
             <tbody class="table__tbody">
                 <?php foreach($registros as $registro) { ?>
                     <tr class="table__tr">
-                        <td class="table__td">
+                        <td class="table__td table--xs">
                          <?php echo $registro->usuario->nombre ." " . $registro->usuario->apellido ?>
                         </td>
                         <td class="table__td">

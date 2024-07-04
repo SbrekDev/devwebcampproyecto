@@ -37,14 +37,25 @@
         },
         options: {
             scales: {
-            y: {
-                beginAtZero: true
-            }
-            },
-            plugins: {
-                legend: {
-                    display: false
-                }
+                x: {
+                    ticks: {
+                        maxRotation: 90,
+                        minRotation: 90
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                         stepSize: 1
+                        }
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
             }
         }
         });

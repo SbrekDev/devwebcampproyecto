@@ -22,7 +22,9 @@
     }
 
     &__td{
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 2rem;
+        
+
 
         &--acciones{
             @extend .table__td;
@@ -30,14 +32,28 @@
             justify-content: flex-end;
             gap: 2rem;
             align-items: center;
+            flex-direction: column;
+            @include m.tablet{
+                flex-direction: row;
+            }
+        
+            
         }
     }
+
+    &--xs{ 
+        @include m.telefono{
+            display: none;
+        }
+    }
+
 
     &__accion{
         all:unset;
         text-transform: uppercase;
-        font-size: 1.6rem;
+        font-size: 2.2rem;
         font-weight: v.$bold;
+
 
         &--editar{
             color: v.$azul;

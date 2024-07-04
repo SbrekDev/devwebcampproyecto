@@ -12,7 +12,7 @@
 
     width: min(100% - 5rem, 65rem);
     margin: 0 auto;
-    padding: 6rem;
+    padding: 8rem 2rem;
     border-radius: 2rem;
     color: v.$blanco;
     position: relative;
@@ -55,7 +55,7 @@
 
     &__logo{
         @include m.logo;
-        @include m.texto-fluido(2rem, 4rem);
+        @include m.texto-fluido(1rem, 4rem);
     }
 
     &__plan{
@@ -66,7 +66,7 @@
     &__precio{
         margin: 3rem 0 0 0;
         font-weight: v.$black;
-        font-size: 4rem;
+        font-size: 3.6rem;
     }
     &__enlace-contenedor{
         margin-top: 5rem;

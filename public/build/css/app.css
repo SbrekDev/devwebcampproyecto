@@ -651,7 +651,7 @@ h3 {
   background-image: image-set(url("../img/bg_4.avif") 1x, url("../img/bg_4.webp") 1x, url("../img/bg_4.png") 1x);
 }
 .speaker__imagen {
-  min-width: 350px;
+  min-width: 300px;
 }
 @media (min-width: 768px) {
   .speaker__imagen {
@@ -744,7 +744,7 @@ h3 {
 .boleto {
   width: min(100% - 5rem, 65rem);
   margin: 0 auto;
-  padding: 6rem;
+  padding: 8rem 2rem;
   border-radius: 2rem;
   color: #FFFFFF;
   position: relative;
@@ -780,7 +780,7 @@ h3 {
   text-align: center;
   margin-bottom: 2rem;
   white-space: nowrap;
-  font-size: clamp(2rem, -0.8rem + 10vw, 4rem);
+  font-size: clamp(1rem, -0.8rem + 10vw, 4rem);
 }
 @media (min-width: 1024px) {
   .boleto__logo {
@@ -796,7 +796,7 @@ h3 {
 .boleto__precio {
   margin: 3rem 0 0 0;
   font-weight: 900;
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 .boleto__enlace-contenedor {
   margin-top: 5rem;
@@ -1265,7 +1265,7 @@ h3 {
   margin: 0;
   padding: 2rem 0;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 900;
 }
 .footer__copyright--regular {
@@ -1332,6 +1332,7 @@ h3 {
 
 .dashboard {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #F8FAFC;
@@ -1381,29 +1382,54 @@ h3 {
   cursor: pointer;
 }
 .dashboard__grid {
-  display: flex;
-  flex: 1;
-  overflow-y: auto;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .dashboard__grid {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+  }
 }
 .dashboard__sidebar {
   background-color: #2f405d;
-  width: 12rem;
+  width: 100%;
+  height: 8rem;
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .dashboard__sidebar {
+    height: 100%;
+    flex-direction: column;
+    width: 12rem;
+  }
 }
 .dashboard__menu {
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   gap: 1rem;
+}
+@media (min-width: 768px) {
+  .dashboard__menu {
+    flex-direction: column;
+  }
 }
 .dashboard__enlace {
   color: #91a5c7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0.5rem;
   padding: 2rem;
   transition: 300ms background-color ease, 300ms color ease;
   border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  .dashboard__enlace {
+    margin-top: 0.5rem;
+  }
 }
 .dashboard__enlace:hover, .dashboard__enlace--actual {
   background-color: #40587f;
@@ -1416,12 +1442,19 @@ h3 {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 700;
+  display: none;
+}
+@media (min-width: 768px) {
+  .dashboard__menu--texto {
+    display: block;
+  }
 }
 .dashboard__contenido {
   background-color: #d4e1ed;
   padding: 1rem 1rem 3rem 1rem;
   overflow-y: scroll;
   width: 100%;
+  height: 100%;
 }
 @media (min-width: 768px) {
   .dashboard__contenido {
@@ -1449,6 +1482,7 @@ h3 {
   display: inline-block;
   text-transform: uppercase;
   font-size: 1.6rem;
+  margin-bottom: 2rem;
 }
 .dashboard__boton:hover {
   background-color: #0063c1;
@@ -1457,6 +1491,7 @@ h3 {
 @media (min-width: 768px) {
   .dashboard__boton {
     width: auto;
+    margin-bottom: 0;
   }
 }
 .dashboard__contenedor, .dashboard__formulario {
@@ -1490,18 +1525,29 @@ h3 {
   background-color: #e6edf4;
 }
 .table__td, .table__td--acciones {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .table__td--acciones {
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
   align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .table__td--acciones {
+    flex-direction: row;
+  }
+}
+@media (max-width: 480px) {
+  .table--xs {
+    display: none;
+  }
 }
 .table__accion {
   all: unset;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 .table__accion--editar {
