@@ -1,0 +1,27 @@
+// business
+
+// sb-juij4731453722@business.example.com
+// tK*%U8hf
+
+// personal
+
+// sb-pgpmi31491060@personal.example.com
+// T+w2,.<e
+
+Type
+TextDisplay
+VISA
+TextDisplay
+Card Number
+TextDisplay
+4587647650859839
+TextDisplay
+
+Expiry
+TextDisplay
+07/2029
+TextDisplay
+
+CVC Code
+TextDisplay
+Any 3 digits
